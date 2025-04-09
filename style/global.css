@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /* brand colors */
     --brand-light: #F67841;
@@ -17,13 +23,6 @@
     --stroke-highlight: #F3541C;
     /* semantic colors*/
     --semantic-error: #DC2626;
-    /* supporting colors */
-    --orange: #F9A474;
-    --yellow: #FEDF6F;
-    --green: #C7D78D;
-    --blue: #B8CEDC;
-    --violet: #C3B2E7;
-    --pink: #F682A5;
 
     /* fonts */
     --font-poppins: "Poppins", sans-serif;
@@ -31,4 +30,8 @@
     --heading2: 500 1.5rem/120% var(--font-poppins);
     --heading3: 500 1.25rem/120% var(--font-poppins);
     --heading4: 500 1rem/120% var(--font-poppins);
+}
+
+body {
+    overflow: hidden;
 }
