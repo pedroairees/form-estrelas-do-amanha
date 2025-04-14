@@ -12,6 +12,22 @@ main {
     & .main-container {
         max-width: 33rem;
         margin-left: auto;
+
+        & h1 {
+            font: 600 1.5rem/125% --font-poppins;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+    }
+
+    & .back {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        & span {
+            font: 400 1rem/ 150% --font-poppins;
+        }
     }
 }
 
@@ -21,5 +37,19 @@ aside {
 
     & .aside-container {
         max-width: 31rem;
+
+        & h2 {
+            font: 600 2.5rem/125% --font-poppins;
+            color: var(--text-primary);
+            margin-block: .5rem;
+        }
+
+        & span {
+            color: var(--text-highlight);
+        }
+
+        & p {
+            margin-bottom: 2rem;
+        }
     }
 }
