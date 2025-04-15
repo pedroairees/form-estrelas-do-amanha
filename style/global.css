@@ -33,13 +33,43 @@
 }
 
 body {
-    overflow: hidden;
     font: 400 1rem/150% var(--font-poppins);
     color: var(--text-secondary);
-
+    overflow-y: scroll;
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
 }
+
+main {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #f67841;
+    --sb-size: 9px;
+  
+    overflow-y: auto;
+    height: 100vh; /* necessário pra rolar dentro do main */
+  }
+  
+  /* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+  main::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 15px;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 15px;
+  }
+  
+  /* Scrollbar para navegadores com suporte a scrollbar-color (Firefox) */
+  @supports not selector(::-webkit-scrollbar) {
+    main {
+      scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+  }
