@@ -12,12 +12,12 @@ main {
     & .main-container {
         max-width: 33rem;
         margin-left: auto;
+    }
 
-        & h1 {
-            font: 600 1.5rem/125% --font-poppins;
-            color: var(--text-primary);
-            margin-bottom: 8px;
-        }
+    & h1 {
+        font: 600 1.5rem/125% var(--font-poppins);
+        color: var(--text-primary);
+        margin-bottom: .5rem;
     }
 
     & .back {
@@ -26,7 +26,7 @@ main {
         margin-bottom: 1.5rem;
 
         & span {
-            font: 400 1rem/ 150% --font-poppins;
+            font: 400 1rem/ 150% var(--font-poppins);
         }
     }
 }
