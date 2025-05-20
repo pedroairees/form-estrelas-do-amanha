@@ -24,4 +24,4 @@ Site demonstrativo de um formulario de escola
 
 ### 📖 License
 
-This project is under the MIT license. See the file [LICENSE](https://github.com/pedroairees/PortfolioDev/blob/main/LICENSE) for more details.
+This project is under the MIT license. See the file [LICENSE](https://github.com/pedroairees/form-estrelas-do-amanha/blob/main/LICENSE) for more details.
