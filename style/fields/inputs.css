@@ -2,7 +2,8 @@ input, textarea, select {
     appearance: none;
     width: 100%;
     border-radius: .5rem;
-    border: 1px solid var(--stroke-default);
+    border: 2px solid transparent;
+    outline: 1px solid var(--stroke-default);
     padding: .75rem 1rem;
     font: 400 1rem/150% var(--font-poppins);
     transition: 0.5s;
@@ -20,14 +21,14 @@ textarea:focus,
 select:focus,
 input[type="date"]:focus-within {
     outline: .25rem solid var(--surface-secondary);
-    border: .125rem solid var(--text-highlight);
+    border-color: var(--text-highlight);
     outline-offset: .1px;
 }
 
 input:hover,
 textarea:hover,
 select:hover {
-    border: 1px solid var(--stroke-highlight);
+    outline: 1px solid var(--stroke-highlight);
 }
 
 input[type="date"] {
