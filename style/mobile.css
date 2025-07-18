@@ -1,0 +1,20 @@
+body {
+    overflow: auto;
+}
+
+#app {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: auto;
+
+
+    & main {
+        height: auto;
+        overflow: auto;
+        order: 2;
+
+        & .main-container {
+            margin: 0;
+        }
+    }
+}
